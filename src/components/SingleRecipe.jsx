@@ -11,7 +11,7 @@ function SingleRecipe(props) {
 
     useEffect(()=>{
         const fetchData = async () =>{
-            const res = await fetch(`http://localhost:8081/recipe/${props._id}`);
+            const res = await fetch(`https://enigmatic-crag-17408.herokuapp.com/recipe/${props._id}`);
             res.json().then((res) => setRecipe(res));
         }
         fetchData();

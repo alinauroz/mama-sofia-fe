@@ -15,7 +15,7 @@ function RecipeEdit() {
 
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch("http://localhost:8081/recipes");
+            const res = await fetch("https://enigmatic-crag-17408.herokuapp.com/recipes");
             res.json().then((res) => setRecipes({ data: res }));
         }
 
