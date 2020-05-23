@@ -1,0 +1,7 @@
+# Group 1
+User-agent: Googlebot
+Allow: /
+
+# Block the entire site from anothercrawler.
+User-agent: anothercrawler
+Disallow: /
