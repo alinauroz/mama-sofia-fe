@@ -11,6 +11,13 @@ a {
   text-decoration: none!important;
 }
 
+.navbar .navbar-nav .nav-link {
+  color: black;
+}
+.navbar .navbar-nav .nav-item.active .nav-link{
+  font-weight: 700!important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -335,7 +342,7 @@ a.navbar-brand.text-white {
 
 
 /*  */
-li.nav-item.active a.nav-link.text-white {
+#recipe-navbar li.nav-item.active .nav-link.text-white {
   min-width: 80px;
   text-align: center;
   background-color: #207101;
