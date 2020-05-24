@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Recipes from "../Recipes";
 import RecipeCard from "./RecipeCard";
 import { useState } from "react";
 
@@ -27,6 +26,7 @@ function MealSuggestions() {
                 if(e.category[0] === "breakfast"){
                     breakfastRecipes.push(e);
                 }
+                return null;
             });
     selectedBreakfast = breakfastRecipes[Math.floor(Math.random() * (breakfastRecipes.length))];
     };
@@ -36,6 +36,7 @@ function MealSuggestions() {
             if(e.category[0] === "lunch"){
                 lunchRecipes.push(e);
             }
+            return null;
         });
 selectedLunch = lunchRecipes[Math.floor(Math.random() * (lunchRecipes.length))];
 };
@@ -45,6 +46,7 @@ function dinnerSuggestion() {
         if(e.category[0] === "dinner"){
             dinnerRecipes.push(e);
         }
+        return null;
     });
 selectedDinner = dinnerRecipes[Math.floor(Math.random() * (dinnerRecipes.length))];
 };

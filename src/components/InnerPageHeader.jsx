@@ -1,7 +1,4 @@
 import React from "react";
-import Background from "../images/header-background.jpg";
-
-
 
   function InnerPageHeader(props) {
 

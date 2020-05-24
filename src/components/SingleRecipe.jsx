@@ -15,7 +15,7 @@ function SingleRecipe(props) {
             res.json().then((res) => setRecipe(res));
         }
         fetchData();
-    }, []);
+    }, [props._id]);
 
     console.log(recipe)
 
@@ -74,12 +74,12 @@ function SingleRecipe(props) {
 
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12 pl-3">
+                        <div className="col-lg-4 col-md-6 col-sm-12 pl-3 ingredients-container">
                             <h5 className="ml-4">Ingredients</h5>
                             <ul className="ingredients-list" id="ingredients">
                             {listItems}                         
                             </ul>
-                            <img loading="lazy" alt="Recipe photo" width="300" src={recipe.imgURL}/>
+                            <img loading="lazy" alt="Thumbnail of the food" width="300" src={recipe.imgURL}/>
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import RecipeCard from "./RecipeCard";
 import RecipeSearchBar from "./RecipeSearchBar";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+
 
 var grayBackground = {
     backgroundColor: "#dee2e6",

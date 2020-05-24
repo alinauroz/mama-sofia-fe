@@ -17,7 +17,7 @@ function RecipeEditList(props){
         </div>
             <span className="d-block">{props.shortDescription}</span>
             <Link to={`/recipe-edit-details/${props._id}`}><i className="far fa-edit float-right edit-icon"></i></Link>
-            <a href="#"><i className="far fa-trash-alt float-right delete-icon"></i></a>
+            <Link to="#"><i className="far fa-trash-alt float-right delete-icon"></i></Link>
       </div>
       
     </div>

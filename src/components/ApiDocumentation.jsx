@@ -29,7 +29,7 @@ function ApiDocumentation() {
         <p>Get request to https://enigmatic-crag-17408.herokuapp.com/recipes will bring all the recipes in JSON format</p>
         <br/>
         <i>Example below</i>
-        <img style={maxWidthImage} src={Image1}/>
+        <img loading="lazy" alt="Screenshot for the JSON output" style={maxWidthImage}  src={Image1}/>
         <br/>
         <hr/>
         <h1>GET - single Recipe</h1>
@@ -37,7 +37,7 @@ function ApiDocumentation() {
         Example: https://enigmatic-crag-17408.herokuapp.com/recipe/5ebfc2c7bfcc1718296cab17 will bring 'Caponata pasta'
         <br/><br/>
         <i>Example below</i>
-        <img style={maxWidthImage} src={Image2}/>
+        <img style={maxWidthImage} loading="lazy" alt="Screenshot for the JSON output" src={Image2}/>
         <br/>
         <hr/>
         <h1>PUT - Editing a single recipe</h1>

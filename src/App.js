@@ -7,7 +7,7 @@ import SingleRecipe from './components/SingleRecipe';
 import RecipeEdit from './components/RecipeEdit';
 import ApiDocumentation from './components/ApiDocumentation';
 import MissionPage from './components/MissionPage';
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useParams } from 'react-router-dom';
 
 
 function Home(){

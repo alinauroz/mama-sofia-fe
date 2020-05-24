@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none!important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -392,6 +396,7 @@ a.nav-link.text-white {
   ;
 }
 
+
 @media (max-width: 768px) and (min-width: 600px){
   .col-lg-3.col-sm-6.grow-shadow.recipe-card {
     max-width: 33%;
@@ -460,4 +465,33 @@ display: none;
 .nopadding-container {
   padding-left: 0px!important;
   padding-right: 0px!important;
+}
+
+
+@media (max-width: 500px){
+  .container .meal-suggestions {
+    padding-top: 20px;
+  }
+  .ingredients-container {
+    margin-top: 20px;
+  }
+
+  #ingredients {
+    margin-bottom: 20px;
+  }
+
+  .ingredients-container img {
+    min-width: 100%;
+  }
+
+  header#narrow-height {
+    height: 150px!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .meal-suggestions {
+    min-width: 90%;
+  }
+
 }
