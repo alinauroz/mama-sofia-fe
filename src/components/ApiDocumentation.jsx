@@ -25,7 +25,7 @@ function ApiDocumentation() {
 
 <div loading="lazy" className = "container-fluid login-section nopadding-container">
     <div style={marginArea}>
-    <h1>GET - all Recipes</h1>
+    <h1>GET - all Recipes (Hullo 11 Jun)</h1>
         <p>Get request to https://enigmatic-crag-17408.herokuapp.com/recipes will bring all the recipes in JSON format</p>
         <br/>
         <i>Example below</i>
