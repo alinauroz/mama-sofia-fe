@@ -1,6 +1,7 @@
 import React from "react";
 import Nutritions from './Nutritions';
 import SinglePageHeader from './InnerPageHeader';
+import RecipeCard from "./RecipeCard";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -11,8 +12,9 @@ function SingleRecipe(props) {
 
     useEffect(()=>{
         const fetchData = async () =>{
-            const res = await fetch(`https://enigmatic-crag-17408.herokuapp.com/recipe/${props._id}`);
-            res.json().then((res) => setRecipe(res));
+            //const res = await fetch(`https://enigmatic-crag-17408.herokuapp.com/recipe/${props._id}`);
+            const res = await fetch(`http://localhost:8081/recipe/${props._id}`);
+            res.json().then((res) => setRecipe(Object.assign(res._doc, {suggestions: res.suggestions})));
         }
         fetchData();
     }, [props._id]);
@@ -73,6 +75,36 @@ function SingleRecipe(props) {
                                 </div>
 
                             </div>
+                            <br />
+                            <div className = "row">
+                                <div className = "col" style={{display: "block"}}><h5>Tags & Suggestions</h5>
+                                {
+                                    recipe.tags ? recipe.tags.map (tag => {
+                                        return <span className="tag-unit">{tag}</span>;
+                                    }) : ""
+                                }
+                                </div>
+                            </div>
+                            <br />
+                            <div className = "row">
+                                {
+                                    recipe.suggestions ? recipe.suggestions.map(suggestion => {
+                                        return (
+                                            <RecipeCard
+                                                img={suggestion.imgURL}
+                                                name={suggestion.name}
+                                                shortDescription={""}
+                                                category={suggestion.category}
+                                                key={suggestion._id}
+                                                _id={suggestion._id}
+                                            />
+                                        )
+                                    }): ""
+                                }
+                            </div>
+                            <div>
+                                
+                            </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 pl-3 ingredients-container">
                             <h5 className="ml-4">Ingredients</h5>
@@ -80,6 +112,9 @@ function SingleRecipe(props) {
                             {listItems}                         
                             </ul>
                             <img loading="lazy" alt="Thumbnail of the food" width="300" src={recipe.imgURL}/>
+                        </div>
+                        <div className = "comments">
+
                         </div>
                     </div>
                 </div>

@@ -2,13 +2,15 @@ import React, { useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 import { useState } from "react";
 
+let url_ = process.env.MODE == "production" ? "https://enigmatic-crag-17408.herokuapp.com/recipes" : ""
+
 function MealSuggestions() {
 
     const [Recipes, setRecipes] = useState({data: []});
 
     useEffect(()=>{
         const fetchData = async () => {
-            const res = await fetch("https://enigmatic-crag-17408.herokuapp.com/recipes");
+            const res = await fetch(url_);
             res.json().then(res => setRecipes({data: res}));
         }
         fetchData();

@@ -536,3 +536,12 @@ display: none;
 
 
 }
+
+.tag-unit {
+  background-color: rgba(60,60,60,0.95);
+  color: white;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 13px;
+}
