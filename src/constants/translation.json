@@ -1,0 +1,33 @@
+{
+    "home" : {
+        "en" : "Home",
+        "fr" : "Home"
+    },
+    "mission": {
+        "en": "Our Mission",
+        "fr" : "Our Mission"
+    },
+    "disclaimer": {
+        "en": "Disclaimer",
+        "fr": "Disclaimer"
+    },
+    "search-tb": {
+        "en": "Search for recipies"
+    },
+    "all": {
+        "en": "All",
+        "fr": "All"
+    },
+    "breakfast": {
+        "en": "Breakfast",
+        "fr": "Breakfast"
+    },
+    "lunch": {
+        "en": "Lunch",
+        "fr": "Lunch"
+    },
+    "dinner": {
+        "en": "Dinner",
+        "fr": "Dinner"
+    }
+}
