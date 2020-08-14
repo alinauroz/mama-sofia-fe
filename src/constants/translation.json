@@ -1,15 +1,15 @@
 {
     "home" : {
         "en" : "Home",
-        "fr" : "Home"
+        "fr" : "Accueil"
     },
     "mission": {
         "en": "Our Mission",
-        "fr" : "Our Mission"
+        "fr" : "Notre mission"
     },
     "disclaimer": {
         "en": "Disclaimer",
-        "fr": "Disclaimer"
+        "fr": "Avertissement"
     },
     "search-tb": {
         "en": "Search for recipies"

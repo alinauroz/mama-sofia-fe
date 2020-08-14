@@ -13,9 +13,13 @@ const dynatext = require('dyna-gettext');
 const translations = require( './constants/translation.json');
 dynatext.loadText(translations, "translations");
 
+const lang = "fr"
+
 function Home(){
     return <div className="App">
-    <Navbar/>
+    <Navbar
+      lang = {lang}
+    />
     <Header/>
     <RecipeList/>
   </div>
