@@ -9,6 +9,9 @@ import ApiDocumentation from './components/ApiDocumentation';
 import MissionPage from './components/MissionPage';
 import { BrowserRouter as Router, Switch, Route, useParams } from 'react-router-dom';
 
+const dynatext = require('dyna-gettext');
+const translations = require( './constants/translation.json');
+dynatext.loadText(translations, "translations");
 
 function Home(){
     return <div className="App">
