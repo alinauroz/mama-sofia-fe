@@ -1,6 +1,7 @@
 import React from "react";
 import Nutritions from './Nutritions';
 import SinglePageHeader from './InnerPageHeader';
+import { DiscussionEmbed } from 'disqus-react';
 import RecipeCard from "./RecipeCard";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -113,8 +114,18 @@ function SingleRecipe(props) {
                             </ul>
                             <img loading="lazy" alt="Thumbnail of the food" width="300" src={recipe.imgURL}/>
                         </div>
-                        <div className = "comments">
-
+                        <div className = "comments" style={{width: "100%"}}>
+                        <DiscussionEmbed
+                            shortname="mamasofia"
+                            config={
+                                {
+                                    url: window.location.href,
+                                    identifier: recipe._id,
+                                    title: recipe.name,
+                                    language: 'en-US' //e.g. for Traditional Chinese (Taiwan)	
+                                }
+                            }
+                        />
                         </div>
                     </div>
                 </div>
