@@ -4,7 +4,8 @@ import SinglePageHeader from './InnerPageHeader';
 import RecipeCard from "./RecipeCard";
 import { useEffect } from "react";
 import { useState } from "react";
-import Comments from './Comments'
+import Comments from './Comments';
+import Tag from './Tag';
 
 const dynatext = require("dyna-gettext");
 
@@ -94,7 +95,7 @@ function SingleRecipe(props) {
                                 </h5>
                                 {
                                     recipe.tags ? recipe.tags.map (tag => {
-                                        return <span className="tag-unit">{tag}</span>;
+                                        return <Tag  value = {tag} />
                                     }) : ""
                                 }
                                 </div>
