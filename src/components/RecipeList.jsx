@@ -9,7 +9,7 @@ var grayBackground = {
     backgroundColor: "#dee2e6",
 };
 
-function RecipeList() {
+function RecipeList(props) {
     const [Recipes, setRecipes] = useState({ data: null });
 
     useEffect(() => {
@@ -27,7 +27,9 @@ function RecipeList() {
             style={grayBackground}
             id="recipe-list"
         >
-            <RecipeSearchBar />
+            <RecipeSearchBar 
+                lang = {props.lang}
+            />
             <div className="container space-top-bottom">
                 <div className="row">
                     {Recipes.data &&
@@ -39,6 +41,7 @@ function RecipeList() {
                                 category={recipe.category}
                                 key={recipe._id}
                                 _id={recipe._id}
+                                lang = {props.lang}
                             />
                         ))}
                     {/* <RecipeCard

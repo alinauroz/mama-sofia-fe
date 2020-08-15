@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 import { useState } from "react";
 
-let url_ = process.env.MODE == "production" ? "https://enigmatic-crag-17408.herokuapp.com/recipes" : ""
+let url_ = process.env.MODE !== "production" ? "https://enigmatic-crag-17408.herokuapp.com/recipes" : ""
 
 function MealSuggestions() {
 
