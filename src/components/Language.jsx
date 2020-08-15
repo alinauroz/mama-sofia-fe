@@ -20,11 +20,11 @@ export default class Language extends React.Component {
             <select 
                 style={{marginTop: 10}}
                 onChange = {this.onChange_}
+                value = {lang}
             >
                 {
                     this.state.langs.map(l => {
-                        return l == lang ? <option selected> {l} </option>
-                                        : <option> {l} </option>
+                        return <option key={l}> {l} </option>
                     })
                 }
             </select>

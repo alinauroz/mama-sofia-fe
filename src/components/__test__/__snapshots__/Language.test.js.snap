@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<select
+  onChange={[Function]}
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+  value="en"
+>
+  <option>
+     
+    en
+     
+  </option>
+  <option>
+     
+    fr
+     
+  </option>
+</select>
+`;
