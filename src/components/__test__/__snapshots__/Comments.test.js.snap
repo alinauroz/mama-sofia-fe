@@ -9,7 +9,6 @@ exports[`matches snapshot 1`] = `
     }
   }
 >
-  u
   <div
     config={
       Object {

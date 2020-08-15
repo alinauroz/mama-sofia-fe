@@ -3,7 +3,7 @@ import { DiscussionEmbed } from 'disqus-react';
 
 export default function Comments (props) {
     return (
-        <div className = "comments" style={{width: "100%"}}>u
+        <div className = "comments" style={{width: "100%"}}>
             <DiscussionEmbed
                 shortname="mamasofia"
                 config={
