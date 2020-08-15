@@ -1,33 +1,66 @@
 {
     "home" : {
         "en" : "Home",
-        "fr" : "Home"
+        "fr" : "Accueil"
     },
     "mission": {
         "en": "Our Mission",
-        "fr" : "Our Mission"
+        "fr" : "Notre mission"
     },
     "disclaimer": {
         "en": "Disclaimer",
-        "fr": "Disclaimer"
+        "fr": "Avertissement"
     },
     "search-tb": {
-        "en": "Search for recipies"
+        "en": "Search for recipies",
+        "fr": "Rechercher des recettes"
     },
     "all": {
         "en": "All",
-        "fr": "All"
+        "fr": "Toute"
     },
     "breakfast": {
         "en": "Breakfast",
-        "fr": "Breakfast"
+        "fr": "Petit déjeuner"
     },
     "lunch": {
         "en": "Lunch",
-        "fr": "Lunch"
+        "fr": "Le déjeuner"
     },
     "dinner": {
         "en": "Dinner",
-        "fr": "Dinner"
+        "fr": "Dîner"
+    },
+    "preparation": {
+        "en": "Preparation",
+        "fr": "Préparation"
+    },
+    "nutritions": {
+        "en": "Nutritions",
+        "fr": "Nutritions"
+    },
+    "time": {
+        "en": "Time",
+        "fr": "Temps"
+    },
+    "portion": {
+        "en": "Portion",
+        "fr": "Portion"
+    },
+    "cat": {
+        "en": "Categories",
+        "fr": "Catégories"
+    },
+    "tags": {
+        "en": "Tags & Suggestions",
+        "fr": "Tags & Suggestions"
+    },
+    "sign-in": {
+        "en": "Please Sign In",
+        "fr": "Veuillez vous Connecter"
+    },
+    "sign-in-button": {
+        "en": "Sign In",
+        "fr": "se Connecter"
     }
 }

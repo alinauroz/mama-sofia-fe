@@ -6,6 +6,8 @@ import RecipeCard from "./RecipeCard";
 import { useEffect } from "react";
 import { useState } from "react";
 
+const dynatext = require("dyna-gettext");
+
 
 function SingleRecipe(props) {
 
@@ -29,7 +31,9 @@ function SingleRecipe(props) {
     );}
     
         if(!recipe){
-            return <div className="container-fluid nopadding-container">Nope, there is nothing to show</div>
+            return <div className="container-fluid nopadding-container">
+
+            </div>
         }
     return <div className="container-fluid nopadding-container">
 
@@ -45,11 +49,12 @@ function SingleRecipe(props) {
                         <div className="col-lg-8 col-md-6 col-sm-12">
                             <p>{recipe.shortDescription} </p>
                             <hr/>
-                            <h5>Preparation
+                            <h5>
+                            {dynatext.getText("preparation", {id: "translations", "lang": props.lang || "en"})}
                             </h5>
                             <p>{recipe.preparation}</p>
                             <hr/>
-                            <h5>Nutritions</h5>
+                            <h5>{dynatext.getText("nutritions", {id: "translations", "lang": props.lang || "en"})}</h5>
                             <Nutritions
                                 kcal = {recipe.nutritionalValues.kcal}
                                 fat = {recipe.nutritionalValues.fat}
@@ -63,22 +68,30 @@ function SingleRecipe(props) {
                             <hr/>
                             <div className = "row">
                                 <div className="col">
-                                    <h5>Time</h5>
+                                    <h5>
+                                    {dynatext.getText("time", {id: "translations", "lang": props.lang || "en"})}
+                                    </h5>
                                     {recipe.time}
                                 </div>
                                 <div className="col">
-                                    <h5>Portion</h5>
+                                    <h5>
+                                    {dynatext.getText("portion", {id: "translations", "lang": props.lang || "en"})}
+                                    </h5>
                                     {recipe.portion}
                                 </div>
                                 <div className="col">
-                                    <h5>Categories</h5>
+                                    <h5>
+                                    {dynatext.getText("cat", {id: "translations", "lang": props.lang || "en"})}
+                                    </h5>
                                     {recipe.category}
                                 </div>
 
                             </div>
                             <br />
                             <div className = "row">
-                                <div className = "col" style={{display: "block"}}><h5>Tags & Suggestions</h5>
+                                <div className = "col" style={{display: "block"}}><h5>
+                                {dynatext.getText("tags", {id: "translations", "lang": props.lang || "en"})}
+                                </h5>
                                 {
                                     recipe.tags ? recipe.tags.map (tag => {
                                         return <span className="tag-unit">{tag}</span>;

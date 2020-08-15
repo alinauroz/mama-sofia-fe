@@ -9,54 +9,65 @@ import ApiDocumentation from './components/ApiDocumentation';
 import MissionPage from './components/MissionPage';
 import { BrowserRouter as Router, Switch, Route, useParams } from 'react-router-dom';
 
+const dynatext = require('dyna-gettext');
+const translations = require( './constants/translation.json');
+dynatext.loadText(translations, "translations");
+
+const lang = "fr"
 
 function Home(){
     return <div className="App">
-    <Navbar/>
-    <Header/>
-    <RecipeList/>
+    <Navbar
+      lang = {lang}
+    />
+    <Header
+      lang = {lang}
+    />
+    <RecipeList
+      lang = {lang}
+    />
   </div>
  };
 
  function Login() {
-   return <div className="App"> <Navbar/><LoginSection/> </div>
+   return <div className="App"> <Navbar lang = {lang}/><LoginSection lang={lang}/> </div>
  };
 
  function Signup() {
-    return <div className="App"> <Navbar/> <h1> Sign up page</h1> </div>
+    return <div className="App"> <Navbar lang = {lang}/> <h1> Sign up page</h1> </div>
  };
 
  function Profile() {
-  return <div className="App"> <Navbar/> <h1> Profile page</h1> </div>
+  return <div className="App"> <Navbar lang = {lang}/> <h1> Profile page</h1> </div>
 };
 
 function Breakfast() {
-  return <div className="App"> <Navbar/> <h1>Breakfast</h1> </div>
+  return <div className="App"> <Navbar lang = {lang}/> <h1>Breakfast</h1> </div>
 }
 
 function Lunch() {
-  return <div className="App"> <Navbar/> <h1>Lunch</h1> </div>
+  return <div className="App"> <Navbar lang = {lang} /> <h1>Lunch</h1> </div>
 }
 
 function Api() {
-  return <div className="App"> <Navbar/> <ApiDocumentation/> </div>
+  return <div className="App"> <Navbar lang = {lang}/> <ApiDocumentation/> </div>
 }
 
 function Dinner() {
-  return <div className="App"> <Navbar/> <h1>Dinner</h1> </div>
+  return <div className="App"> <Navbar lang = {lang} /> <h1>Dinner</h1> </div>
 }
 
 function Submit() {
-  return <div className="App"> <Navbar/><RecipeEdit/></div>
+  return <div className="App"> <Navbar lang = {lang}/><RecipeEdit/></div>
 }
 
 function Mission() {
-  return <div className="App"> <Navbar/> <MissionPage/> </div>
+  return <div className="App"> <Navbar lang = {lang}/> <MissionPage/> </div>
 }
 
 function Single() {
     let{id} = useParams();
-  return <div className="App"> <Navbar/> <SingleRecipe _id={id}/> </div>
+  return <div className="App"> <Navbar lang = {lang}/> <SingleRecipe _id={id} lang = {lang}/> </div>
 }
 
  
