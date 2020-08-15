@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../src/mamasofia-logo.svg";
 import { Link } from "react-router-dom";
+import Language from './Language'
 
 const dynatext = require("dyna-gettext");
 
@@ -53,6 +54,9 @@ function Navbar(props) {
               <path d="M15.293 3.207a1 1 0 011.414 0l.03.03a1 1 0 01.03 1.383L15.5 6 14 4.5l1.293-1.293z" />
             </svg>
             </Link>
+          </li>
+          <li className="nav-item">
+            <Language/>
           </li>
         </ul>
 
