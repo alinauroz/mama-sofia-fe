@@ -30,7 +30,7 @@ function Home(){
  };
 
  function Login() {
-   return <div className="App"> <Navbar lang = {lang}/><LoginSection/> </div>
+   return <div className="App"> <Navbar lang = {lang}/><LoginSection lang={lang}/> </div>
  };
 
  function Signup() {

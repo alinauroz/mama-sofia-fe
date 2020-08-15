@@ -54,5 +54,13 @@
     "tags": {
         "en": "Tags & Suggestions",
         "fr": "Tags & Suggestions"
+    },
+    "sign-in": {
+        "en": "Please Sign In",
+        "fr": "Veuillez vous Connecter"
+    },
+    "sign-in-button": {
+        "en": "Sign In",
+        "fr": "se Connecter"
     }
 }
