@@ -14,7 +14,7 @@ var backgroundImage = {
 };
 
 function Header(props) {
-return <header className="masthead text-white text-center" style={ backgroundImage }>
+return <header data-testid = 'header' className="masthead text-white text-center" style={ backgroundImage }>
 
 <MealSuggestions
   lang = {props.lang}

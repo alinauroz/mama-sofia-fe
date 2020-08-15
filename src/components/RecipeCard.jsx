@@ -26,7 +26,7 @@ function RecipeCard(props) {
                 <i className="recipe-category">{props.category}</i>
             </div>
         </div>
-    </Link>
+        </Link>
     </div>
 
 };

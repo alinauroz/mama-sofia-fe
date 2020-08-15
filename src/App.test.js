@@ -14,8 +14,8 @@ test('Checks if the header exists', () => {
 
 
 // Checking if RecipeCard has content
-test('Checks if the header exists', () => {
-  const { getMatchedCSSRules } = render(<RecipeCard />);
-  const linkElement2 = getMatchedCSSRules(".recipe-name");
-  expect(linkElement2).toBeInTheDocument();
-});
+//test('Checks if the header exists', () => {
+//  const { getMatchedCSSRules } = render(<RecipeCard />);
+//  const linkElement2 = getMatchedCSSRules(".recipe-name");
+//  expect(linkElement2).toBeInTheDocument();
+//});

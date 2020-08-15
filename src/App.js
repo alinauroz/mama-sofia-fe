@@ -13,7 +13,7 @@ const dynatext = require('dyna-gettext');
 const translations = require( './constants/translation.json');
 dynatext.loadText(translations, "translations");
 
-const lang = "fr"
+const lang = localStorage.getItem("lang") || "en";
 
 function Home(){
     return <div className="App">

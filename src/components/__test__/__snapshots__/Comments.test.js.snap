@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="comments"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <div
+    config={
+      Object {
+        "identifier": "5f35abbdf05c76200731046a",
+        "language": "en-US",
+        "title": "Coconut & squash dhansak",
+        "url": "http://localhost/",
+      }
+    }
+    id="disqus_thread"
+    shortname="mamasofia"
+  />
+</div>
+`;
